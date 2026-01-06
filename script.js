@@ -10,12 +10,10 @@
   let index = 0;
 
   const phraseEl = document.getElementById("phrase");
-  const progressEl = document.getElementById("progress");
   const nextBtn = document.getElementById("nextBtn");
 
   function render() {
-    phraseEl.textContent = pages[index];
-    progressEl.textContent = `${index + 1} / ${pages.length}`;
+    phraseEl.textContent = pages[index]; // CSS já transforma em maiúsculo
   }
 
   function nextPage() {
