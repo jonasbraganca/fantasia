@@ -1,10 +1,10 @@
 (() => {
   const pages = [
-    "o que",
-    "você não sabe:",
-    "que eu",
-    "realizaria",
-    "seu desejo",
+    "O QUE",
+    "VOCÊ NÃO SABE:",
+    "QUE EU",
+    "REALIZARIA",
+    "SEU DESEJO",
   ];
 
   let index = 0;
