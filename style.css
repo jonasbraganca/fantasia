@@ -29,44 +29,40 @@ html, body {
   text-align: center;
 }
 
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 18px;
+}
+
 .phrase {
   font-family: "Roboto Condensed", "Arial Narrow", "HelveticaNeue-Condensed",
                "Helvetica Neue", Arial, system-ui, sans-serif;
-
   font-size: clamp(28px, 5vw, 64px);
-
-  font-weight: 300;        /* menos grossa */
-  letter-spacing: 0.02em;  /* mais “esticada” visualmente */
-  line-height: 1.35;       /* dá mais altura/verticalidade */
-  font-stretch: condensed; /* se o navegador/fonte suportar */
-
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  font-stretch: condensed;
   user-select: none;
 }
 
-
-.controls {
-  margin-top: 28px;
-  display: grid;
-  justify-items: center;
-}
-
-.btn {
-  background: #fff;
+.arrow {
+  background: transparent;
+  border: none;           /* remove borda */
+  padding: 0;             /* remove “caixa” */
+  margin: 0;
   color: #000;
-  border: 1px solid #000;
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
-  font-size: 22px;
+  font-size: clamp(26px, 4vw, 44px);
   cursor: pointer;
-  display: grid;
-  place-items: center;
+  line-height: 1;
 }
 
-.btn:focus {
+.arrow:focus {
   outline: 3px solid #000;
-  outline-offset: 3px;
+  outline-offset: 6px;
 }
+
 
 .progress {
   margin-top: 18px;
