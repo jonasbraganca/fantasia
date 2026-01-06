@@ -1,10 +1,10 @@
 (() => {
   const pages = [
-    "O QUE",
-    "VOCÊ NÃO SABE:",
-    "QUE EU",
-    "REALIZARIA",
-    "SEU DESEJO",
+    "o que",
+    "você não sabe:",
+    "que eu",
+    "realizaria",
+    "seu desejo",
   ];
 
   let index = 0;
@@ -13,7 +13,7 @@
   const nextBtn = document.getElementById("nextBtn");
 
   function render() {
-    phraseEl.textContent = pages[index]; // CSS já transforma em maiúsculo
+    phraseEl.textContent = pages[index].toUpperCase();
   }
 
   function nextPage() {
