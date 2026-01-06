@@ -37,20 +37,19 @@ html, body {
 }
 
 .phrase {
-  font-family: "Roboto Condensed", "Arial Narrow", "HelveticaNeue-Condensed",
-               "Helvetica Neue", Arial, system-ui, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(28px, 5vw, 64px);
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.02em;
-  line-height: 1.35;
-  font-stretch: condensed;
+  line-height: 1.2;
+  text-transform: uppercase; /* tudo maiúsculo */
   user-select: none;
 }
 
 .arrow {
   background: transparent;
-  border: none;           /* remove borda */
-  padding: 0;             /* remove “caixa” */
+  border: none;
+  padding: 0;
   margin: 0;
   color: #000;
   font-size: clamp(26px, 4vw, 44px);
@@ -62,7 +61,6 @@ html, body {
   outline: 3px solid #000;
   outline-offset: 6px;
 }
-
 
 .progress {
   margin-top: 18px;
