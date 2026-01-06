@@ -19,7 +19,7 @@
   }
 
   function nextPage() {
-    index = (index + 1) % pages.length; // volta ao início após a última
+    index = (index + 1) % pages.length;
     render();
   }
 
