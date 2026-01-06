@@ -1,9 +1,10 @@
 (() => {
   const pages = [
-    "você não sabe",
+    "o que",
+    "você não sabe:",
     "que eu",
     "realizaria",
-    "seus desejos",
+    "seu desejo",
   ];
 
   let index = 0;
@@ -22,10 +23,8 @@
     render();
   }
 
-  // Botão
   nextBtn.addEventListener("click", nextPage);
 
-  // Teclado: seta para direita
   window.addEventListener("keydown", (e) => {
     if (e.key === "ArrowRight") {
       e.preventDefault();
